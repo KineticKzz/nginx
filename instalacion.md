@@ -6,8 +6,6 @@ Aconsejable realizar los siguientes pasos antes de la instalación
 
 ```sudo apt update```
 
-```sudo apt upgrade```
-
 Vamos a lo interesante
 
 ```apt install nginx``` --> Instalamos el servicio web nginx
