@@ -6,10 +6,10 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
   ```
   Entrada:
-        nginx -v
+    nginx -v
       
   Salida:
-      nginx version: nginx/1.14.2
+    nginx version: nginx/1.14.2
   ```
 
 ```
