@@ -41,6 +41,7 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     - En ellas vamos a introducir un index.html basico:
     
     ```echo "<h2>Esta es mi web1</h2>" > /var/www/web1/index.html```
+    
     ```echo "<h2>Esta es mi web2</h2>" > /var/www/web2/index.html```
     
     
