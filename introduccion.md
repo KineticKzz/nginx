@@ -5,4 +5,4 @@ Es software libre y de código abierto, licenciado bajo la Licencia BSD simplifi
 
 El sistema es usado por una larga lista de sitios web conocidos, como: WordPress, Netflix, Hulu, GitHub, Ohloh, SourceForge, TorrentReactor y partes de Facebook (como el servidor de descarga de archivos zip pesados).
 
-[img]!(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/250px-Nginx_logo.svg.png)
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/250px-Nginx_logo.svg.png)
