@@ -6,3 +6,5 @@
 4. [INSTALACIÓN](https://github.com/sergiolaguens/nginx/blob/main/instalacion.md)
 5. [CASOS PRÁCTICOS](https://github.com/sergiolaguens/nginx/blob/main/practicas.md)
 ## REFERENCIAS
+
+[Wikipedia Nginx](https://es.wikipedia.org/wiki/Nginx)
