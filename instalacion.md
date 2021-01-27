@@ -15,3 +15,7 @@ Vamos a lo interesante
 ```systemctl enable nginx``` --> Activamos el demonio para que se inicie nginx cuando arraquemos el servidor
 
 ```systemctl restart nginx``` --> Reiniciamos el servicio
+
+Buscamos en el navegador la ip de nuestro servidor, o bien, si estamos trabajando dentro del servidor, buscamos localhost
+
+![img](https://i.imgur.com/gdMqcz1.png)
