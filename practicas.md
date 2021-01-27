@@ -4,7 +4,6 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
 1- Versión de Nginx instalado.
 
-    
     Entrada:
       nginx -v
 
@@ -12,5 +11,6 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
       nginx version: nginx/1.14.2
     
       
-      
 2- Servicio Asociado
+
+    systemctl status nginx
