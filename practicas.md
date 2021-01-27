@@ -23,8 +23,9 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
    - Vamos a cambiar la pagina web por defecto.
     
-    ```cp /var/www/html/index.html /var/www/html/index.html.ORIGINAL``` --> Realizamos una copia del index para no perderlo
-    ```echo "<h2> Bienvenidos a Mi servidor web nginx</h2>" > /var/www/html/index.html``` --> Codigo simple de html 
+   ```cp /var/www/html/index.html /var/www/html/index.html.ORIGINAL``` --> Realizamos una copia del index para no perderlo
+   
+   ```echo "<h2> Bienvenidos a Mi servidor web nginx</h2>" > /var/www/html/index.html``` --> Codigo simple de html 
    
    - Recargamos la pagina web y...
     
