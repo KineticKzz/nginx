@@ -11,8 +11,8 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
       nginx version: nginx/1.14.2```
       
       
-\`\`\`ruby <!-- quita esas comillas cuando lo hagas, deja sólo ```ruby ! -->
+```ruby <!-- quita esas comillas cuando lo hagas, deja sólo ```ruby ! -->
 def foobar
     puts "Hello world!"
 end
-\`\`\`
+```
