@@ -30,3 +30,17 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
    - Recargamos la pagina web y...
     
    ![img](https://i.imgur.com/QWIKP7X.png)
+   
+   
+5- Virtual Hosting
+  
+  - Tendremos dos sitios virtuales con la misma ip y el mismo puerto, por lo tanto, lo primero que tenemos que hacer es crear dos carpetas a la misma altura de `/var/www/html`, por lo tanto haremos lo siguiente:
+
+    ```mkdir /var/www/web1 /var/www/web2```
+ 
+    - En ellas vamos a introducir un index.html basico:
+    
+    ```echo "<h2>Esta es mi web1</h2>" > /var/www/web1/index.html```
+    ```echo "<h2>Esta es mi web2</h2>" > /var/www/web2/index.html```
+    
+    
