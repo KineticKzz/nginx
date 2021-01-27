@@ -1,4 +1,4 @@
-<--!>## INTRODUCCION A NGINX<--!>
+<--!## INTRODUCCION A NGINX-->
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/250px-Nginx_logo.svg.png)
 Es un servidor web/proxy inverso ligero de alto rendimiento y un proxy para protocolos de correo electrónico (IMAP/POP3).
 
