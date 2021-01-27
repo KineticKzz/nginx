@@ -18,7 +18,8 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
    Aqui encontraremos todos los ficheros de configuracion para nginx ```/etc/nginx```. El fichero mas genérico, o mas globalizado por asi decirlo (que su configuracion va a estar en todas las paginas) es ```nginx.conf```.
 
-4. Pagina web por defecto
+
+4- Pagina web por defecto
 
     Vamos a cambiar la pagina web por defecto.
     
