@@ -58,11 +58,13 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     
     [Fichero web2](https://github.com/sergiolaguens/nginx/blob/main/web2)
     
-    - Añadimos los dns en la maquina cliente:
+    - Añadimos los dns en el equipo fisico:
     
     `echo "192.168.2.57	www.web1.org" >> /etc/hosts`
     
     `echo "192.168.2.57	www.web2.org" >> /etc/hosts`
+    
+    - Ahora solo tenemos que buscar www.web1.org y www.web2.org
     
     
     
