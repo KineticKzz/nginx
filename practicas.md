@@ -2,6 +2,8 @@
 
 Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus principales funcionalidades
 
+NOTA: DESPUES DE REALIZAR CAMBIOS PARA LAS CONFIGURACIONES DEBEMOS REINICIAR EL SERVICIO.
+
 **1- Versión de Nginx instalado.**
 
     Entrada:
@@ -133,7 +135,10 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
   
         sudo apt install openssl
         
-  - Generamos clave privada para www.web1.org
+  - Generamos clave privada para www.web1.orgssl on;
+	ssl_certificate /etc/ssl/web1.crt;
+	ssl_certificate_key /etc/ssl/web1.key;
+
   
        `cd /etc/ssl` --> Venimos aqui porque será donde guardemos las claves. Puede ser cualquier directorio pero lo haré aqui para tenerlo organizado
        `openssl genrsa -out web1.key 2048`
@@ -146,12 +151,23 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
   
         openssl x509 -req -days 365 -in web1.csr -signkey web1.key -out web1.crt
         
+        
   - Copiamos web1 para configurarlo como ssl:
   
         cd /etc/nginx/sites-available
         cp web1 web1-ssl
         ln -s /etc/nginx/sites-availabe/web1-ssl /etc/nginx/sites-enabled/
+        
+  - Añadimos las siguientes lineas a `/etc/nginx/sites-available/web1-ssl`
+  
+        ssl on;
+	    ssl_certificate /etc/ssl/web1.crt;
+	    ssl_certificate_key /etc/ssl/web1.key;
+     
+  - Reiniciamos el servicio
+   
         systemctl restart nginx
+        
         
   - Por último buscamos en el navegador https://www.web1.org y fin. Tenemos nuestro sitio web seguro. Aunque en el certificado de https nos ponga no seguro es porque lo hemos firmado nostros. Esto lo mas adecuado es hacerlo a través de una empresa certificadora.
 
