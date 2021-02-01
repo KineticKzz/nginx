@@ -88,6 +88,12 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 [Cliente Máquina física](https://i.imgur.com/7aXmwt6.png)
 
 
+7- Autenticacion de Usuarios: Crearemos un directorio en web1 que se llame privado y que solo puedan acceder los usuario válidos.
 
-    
-    
+  - Creamos el direcotrio en `/var/www/web1` 
+  
+        mkdir privado
+        echo "<h2>Este es el directorio PRIVADO</h2>" > privado/index.html
+        
+
+
