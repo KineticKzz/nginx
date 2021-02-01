@@ -111,7 +111,7 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
        
   - COMPROBACIONES:
   
-    -[Acceso a www.web1.org y a www.web1.org/privado](https://i.imgur.com/l8vrKvX.png)
+    - [Acceso a www.web1.org y a www.web1.org/privado](https://i.imgur.com/l8vrKvX.png)
     
 **8- Red externa pide autenticacion al directorio privado, red interna no.**
 
