@@ -8,3 +8,5 @@
 ## REFERENCIAS
 
 [Wikipedia Nginx](https://es.wikipedia.org/wiki/Nginx)
+[Linuxito](https://www.linuxito.com/gnu-linux/nivel-basico/1075-autenticacion-basic-en-nginx)
+[Red Orbita](https://red-orbita.com/?p=8353)
