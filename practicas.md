@@ -81,11 +81,11 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
   - COMPROBACIONES:
   
-[Cliente01 Acceso a web2](https://i.imgur.com/yhF3h2X.png)
+    -[Cliente01 Acceso a web2](https://i.imgur.com/yhF3h2X.png)
 
-[Cliente01 Acceso a web1](https://i.imgur.com/AopJAqN.png)
+    -[Cliente01 Acceso a web1](https://i.imgur.com/AopJAqN.png)
 
-[Cliente Máquina física](https://i.imgur.com/7aXmwt6.png)
+    -[Cliente Máquina física](https://i.imgur.com/7aXmwt6.png)
 
 
 7- Autenticacion de Usuarios: Crearemos un directorio en web1 que se llame privado y que solo puedan acceder los usuario válidos.
@@ -113,4 +113,4 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
        
   - COMPROBACIONES:
   
-       [Acceso a www.web1.org y a www.web1.org/privado](https://i.imgur.com/l8vrKvX.png)
+    -[Acceso a www.web1.org y a www.web1.org/privado](https://i.imgur.com/l8vrKvX.png)
