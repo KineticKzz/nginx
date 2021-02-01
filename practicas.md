@@ -67,4 +67,23 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     - Ahora solo tenemos que buscar www.web1.org y www.web2.org
     
     
+6- Control de Acceso: A la web1 se podrá acceder externa e internamente, a la web2, solo internamente.
+
+  - Editamos el fichero `/etc/nginx/sites-available/web2` añadiendo las siguientes lineas
+  
+                location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+                allow 192.168.2.0/24;
+                deny all;
+        }
+
+  - COMPROBACIONES:
+  
+![img](https://i.imgur.com/yhF3h2X.png)
+![img](https://i.imgur.com/AopJAqN.png)
+![img](https://i.imgur.com/7aXmwt6.png)
+
+    
     
