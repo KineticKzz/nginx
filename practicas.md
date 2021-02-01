@@ -75,17 +75,17 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
                 # First attempt to serve request as file, then
                 # as directory, then fall back to displaying a 404.
                 try_files $uri $uri/ =404;
-                allow 192.168.2.0/24;
+                allow 192.168.3.0/24;
                 deny all;
         }
 
   - COMPROBACIONES:
   
-    -[Cliente01 Acceso a web2](https://i.imgur.com/yhF3h2X.png)
+    -[Red Externa Acceso a web2](https://i.imgur.com/yhF3h2X.png)
 
-    -[Cliente01 Acceso a web1](https://i.imgur.com/AopJAqN.png)
+    -[Red Externa Acceso a web1](https://i.imgur.com/AopJAqN.png)
 
-    -[Cliente Máquina física](https://i.imgur.com/7aXmwt6.png)
+    -[Red Interna](https://i.imgur.com/7aXmwt6.png)
 
 
 **7- Autenticacion de Usuarios: Crearemos un directorio en web1 que se llame privado y que solo puedan acceder los usuario válidos.**
@@ -114,3 +114,18 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
   - COMPROBACIONES:
   
     -[Acceso a www.web1.org y a www.web1.org/privado](https://i.imgur.com/l8vrKvX.png)
+    
+**8- Red externa pide autenticacion al directorio privado, red interna no.**
+
+  - Agregamos las siguientes lineas al código anterior:
+  
+        satisfy any;
+        allow 192.168.3.0/24;
+        deny all;
+        
+  - COMPROBACIONES: 
+  
+    - [Red Externa](https://i.imgur.com/Zuom2KH.png)
+    
+    - [Red Interna](https://i.imgur.com/Ovm2C8J.png)
+
