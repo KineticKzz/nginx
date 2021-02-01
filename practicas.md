@@ -126,4 +126,32 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     - [Red Externa](https://i.imgur.com/Zuom2KH.png)
     
     - [Red Interna](https://i.imgur.com/Ovm2C8J.png)
+    
+**9- Configurar www.web1.org como acceso seguro.**
+
+  - Instalamos openssl
+  
+        sudo apt install openssl
+        
+  - Generamos clave privada para www.web1.org
+  
+       `cd /etc/ssl` --> Venimos aqui porque será donde guardemos las claves. Puede ser cualquier directorio pero lo haré aqui para tenerlo organizado
+       `openssl genrsa -out web1.key 2048`
+       
+  - Generamos el Certificado
+  
+        openssl req -new -key web1.key -out web1.csr
+        
+  - Firmamos el certificado
+  
+        openssl x509 -req -days 365 -in web1.csr -signkey web1.key -out web1.crt
+        
+  - Copiamos web1 para configurarlo como ssl:
+  
+        cd /etc/nginx/sites-available
+        cp web1 web1-ssl
+        ln -s /etc/nginx/sites-availabe/web1-ssl /etc/nginx/sites-enabled/
+        systemctl restart nginx
+        
+  - Por último buscamos en el navegador https://www.web1.org y fin. Tenemos nuestro sitio web seguro. Aunque en el certificado de https nos ponga no seguro es porque lo hemos firmado nostros. Esto lo mas adecuado es hacerlo a través de una empresa certificadora.
 
