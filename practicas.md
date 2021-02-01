@@ -2,7 +2,7 @@
 
 Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus principales funcionalidades
 
-*1- Versión de Nginx instalado.*
+**1- Versión de Nginx instalado.**
 
     Entrada:
       nginx -v
@@ -10,16 +10,16 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     Salida:
       nginx version: nginx/1.14.2
     
-2- Servicio Asociado
+**2- Servicio Asociado**
 
     systemctl status nginx
 
-3- Ficheros de configuración
+**3- Ficheros de configuración**
 
    Aqui encontraremos todos los ficheros de configuracion para nginx ```/etc/nginx```. El fichero mas genérico, o mas globalizado por asi decirlo (que su configuracion va a estar en todas las paginas) es ```nginx.conf```.
 
 
-4- Pagina web por defecto
+**4- Pagina web por defecto**
 
    - Vamos a cambiar la pagina web por defecto.
     
@@ -32,7 +32,7 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
    ![img](https://i.imgur.com/QWIKP7X.png)
    
    
-5- Virtual Hosting
+**5- Virtual Hosting**
   
   - Tendremos dos sitios virtuales con la misma ip y el mismo puerto, por lo tanto, configuraremos cada web por un dominio (www.web1.org y www.web2.org). Lo primero que tenemos que hacer es crear dos carpetas a la misma altura de `/var/www/html`, por lo tanto haremos lo siguiente:
 
@@ -67,7 +67,7 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     - Ahora solo tenemos que buscar www.web1.org y www.web2.org
     
     
-6- Control de Acceso: A la web1 se podrá acceder externa e internamente, a la web2, solo internamente.
+**6- Control de Acceso: A la web1 se podrá acceder externa e internamente, a la web2, solo internamente.**
 
   - Editamos el fichero `/etc/nginx/sites-available/web2` añadiendo las siguientes lineas
   
@@ -88,7 +88,7 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
     -[Cliente Máquina física](https://i.imgur.com/7aXmwt6.png)
 
 
-7- Autenticacion de Usuarios: Crearemos un directorio en web1 que se llame privado y que solo puedan acceder los usuario válidos.
+**7- Autenticacion de Usuarios: Crearemos un directorio en web1 que se llame privado y que solo puedan acceder los usuario válidos.**
 
   - Creamos el direcotrio en `/var/www/web1` 
   
