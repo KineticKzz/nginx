@@ -81,11 +81,11 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
   - COMPROBACIONES:
   
-    -[Red Externa Acceso a web2](https://i.imgur.com/yhF3h2X.png)
+    - [Red Externa Acceso a web2](https://i.imgur.com/yhF3h2X.png)
 
-    -[Red Externa Acceso a web1](https://i.imgur.com/AopJAqN.png)
+    - [Red Externa Acceso a web1](https://i.imgur.com/AopJAqN.png)
 
-    -[Red Interna](https://i.imgur.com/7aXmwt6.png)
+    - [Red Interna](https://i.imgur.com/7aXmwt6.png)
 
 
 **7- Autenticacion de Usuarios: Crearemos un directorio en web1 que se llame privado y que solo puedan acceder los usuario válidos.**
