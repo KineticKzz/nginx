@@ -2,7 +2,7 @@
 
 Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus principales funcionalidades
 
-1- Versión de Nginx instalado.
+*1- Versión de Nginx instalado.*
 
     Entrada:
       nginx -v
