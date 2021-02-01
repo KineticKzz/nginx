@@ -81,9 +81,11 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
 
   - COMPROBACIONES:
   
-![img](https://i.imgur.com/yhF3h2X.png)
-![img](https://i.imgur.com/AopJAqN.png)
-![img](https://i.imgur.com/7aXmwt6.png)
+[Cliente01 Acceso a web2](https://i.imgur.com/yhF3h2X.png)
+[Cliente01 Acceso a web1](https://i.imgur.com/AopJAqN.png)
+[Cliente Máquina física](https://i.imgur.com/7aXmwt6.png)
+
+
 
     
     
