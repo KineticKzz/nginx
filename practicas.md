@@ -95,5 +95,22 @@ Realizaremos algunos ejemplos para tener soltura con nginx y aprender sus princi
         mkdir privado
         echo "<h2>Este es el directorio PRIVADO</h2>" > privado/index.html
         
-
-
+  - Añadimos las siguientes lineas dentro de `/etc/nginx/sites-available/web1`
+        
+        location /privado {
+                auth_basic               "Acceso restringido";
+                auth_basic_user_file     /etc/nginx/.htpasswd;
+        }
+        
+  - Instalamos el paquete apache2-utils
+  
+        sudo apt install apache2-utils
+        
+  - Creamos las credenciales en el fichero
+  
+       `cd /etc/nginx`
+       `htpasswd -c -m .htpasswd admin` --> Donde admin es el usuario y .htpasswd es el fichero que hemos creado
+       
+  - COMPROBACIONES:
+  
+       [Acceso a www.web1.org y a www.web1.org/privado](https://i.imgur.com/l8vrKvX.png)
